@@ -1,0 +1,378 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    box-sizing: border-box;
+  
+    /* Set font size for easy rem calculations
+     * default document font size = 16px, 1rem = 16px, 100% = 16px
+     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+    */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+#welcome-section{
+    width:100vw;
+    height: 100vh;
+    background-color: rgb(32, 25, 25);
+    background-size: 100%;
+}
+header{
+    background-color: brown;
+    height: 80px;
+    position: fixed;
+    width: 100vw;
+}
+#nav-bar ul{
+    display: flex;
+    justify-content: flex-end;
+}#nav-bar li{
+    display: flex;
+    padding-right: 50px;
+}
+#nav-bar li:hover{
+    transform: translateY(8px);
+    
+}
+#nav-bar a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 30px;
+}
+
+
+#welcome-section{
+    text-align: center;
+    padding-top: 380px;
+}
+#welcome-section h1{
+    font-weight: 600;
+    font-size: 5rem;
+    font-family:Helvetica, sans-serif;
+    color: white;
+}
+#welcome-section p{
+    font-weight: 200;
+    font-size: 2rem;
+    font-family:italic;
+    color: brown;
+}
+#project{
+    padding-top: -50px;
+    background-color: rgb(28, 28, 92);
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+    margin-top: -50px;
+    padding-bottom: 400px;
+    margin-bottom: 200px;
+    
+}
+.work{
+    color:#fff;
+    letter-spacing: 2.5px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: -200px;
+}
+.container{
+    max-width: 700px;
+    margin: 100px  auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    grid-column-gap: 50px;
+    margin-bottom: 100px;
+}
+.first-project img{
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+}
+.second-project img{
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+}
+.thr-project img{
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+}
+.fourth-project img{
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+}
+
+.text{
+    display: block;
+    color: #fff;
+    /*background-color: #45567d;*/
+    font-size: 2em;
+    width: 300px;
+    text-align: center;
+    margin-top: 10px;
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+#contact{
+    background-color: grey;
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+    margin-top: -200px;
+    text-align: center;
+    padding-top: 300px;
+}
+
+#contact h2{
+    font-weight: 600;
+    font-size: 5rem;
+    font-family:Helvetica, sans-serif;
+    color: white;
+}
+#contact p{
+    font-weight: 200;
+    font-size: 2rem;
+    font-family:italic;
+    color: white;
+}
+.contact-form ul{
+    display: flex;
+    justify-content: center;
+}
+.contact-form li{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    font-size: 2.5rem;
+    font-family:Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.contact-form a{
+    text-decoration: none;
+    color: white;
+}
+.contact-form li:hover{
+    transform: scale(1.1);;
+}
+.dropdown-menu{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    #welcome-section{
+        width:100vw;
+        height: 100vh;
+        background-color: rgb(32, 25, 25);
+        background-size: 300%;
+    }
+    #welcome-section{
+        text-align: center;
+        padding-top: 380px;
+    }
+    #welcome-section h1{
+        font-weight: 600;
+        font-size: 3em;
+        font-family:Helvetica, sans-serif;
+        color: white;
+        margin-left: 20px;
+    }
+    #welcome-section p{
+        font-weight: 200;
+        font-size: 2rem;
+        font-family:italic;
+        color: brown;
+        margin-left: 20px;
+    }
+    #nav-bar{
+        display: none;
+    }
+    header{
+        background-color: brown;
+        height: 80px;
+        position: fixed;
+        width: 100vw;
+    }
+    #project{
+        padding-top: 100px;
+        background-color: rgb(28, 28, 92);
+        background-size: 300%;
+        width: 100vw;
+        height: 100vh;
+        margin-top: -50px;
+        padding-bottom: 100px;
+        margin-bottom: 200px;
+    }
+    .container{
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-top: -20px;
+        margin-left: 20px;
+    }
+    .first-project img{
+        grid-column: 1;
+    }
+    .second-project img{
+        grid-row: 2;
+    }
+    .thr-project img{
+        grid-row: 3;
+    }
+    
+    .work{
+        margin-top: -70px;
+        margin-left: -100px;
+        padding-bottom: 20px;
+        
+    }
+    #contact h2{
+        font-weight: 600;
+        font-size: 2em;
+        font-family:Helvetica, sans-serif;
+        color: white;
+        margin-left: -80px;
+    }
+    .contact-form li{
+        display: flex;
+        justify-content: space-around;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 50px;
+        font-size: 1.5rem;
+        font-family:Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+    .contact-form ul{
+        display: flex;
+        justify-content: center;
+        margin-left: -80px;
+    }
+    #contact p{
+        font-weight: 200;
+        font-size: 2rem;
+        font-family:italic;
+        color: white;
+        margin-left: -80px;
+    }
+    #contact{
+        background-color: grey;
+        background-size: 300%;
+        width: 100vw;
+        height: 100vh;
+        margin-top: -200px;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .first-project img{
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 100px;
+    }
+    .second-project img{
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 100px;
+    }
+    .thr-project img{
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 100px;
+    }
+    .fourth-project img{
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 100px;
+    }
+    .text{
+        display: block;
+        color: #fff;
+        /*background-color: #45567d;*/
+        font-size: 1.5em;
+        width: 300px;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: -50px;
+    }
+    html {
+        box-sizing: border-box;
+      
+        /* Set font size for easy rem calculations
+         * default document font size = 16px, 1rem = 16px, 100% = 16px
+         * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+        */
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+    }
+
+}
+@media only screen and ( max-width: 600px) {
+    .nav-bar{
+        display: none;
+    }
+    .menu-btn {
+        background-color: brown;
+        color: white;
+        padding: 16px;
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: none;
+        margin-left: 370px;
+        position: relative;
+        top: 20px;
+    }
+    .dropdown-menu {
+        position: relative;
+        display: inline-block;
+    }
+    .menu-content {
+        display: none;
+        position: absolute;
+        background-color: #000;
+        min-width: 160px;
+        z-index: 1;
+        margin-left: 220px;
+        top: 80px;
+    }
+    .link{
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        padding: 12px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: 'Roboto thin';
+        border-bottom: 1px solid gray;
+    }
+    .link{
+        display: block;
+    }
+    .link:hover {
+        background-color: rgb(8, 107, 46);
+    }
+    .dropdown-menu:hover .menu-content {
+        display: block;
+    }
+    .dropdown-menu:hover .menu-btn {
+        background-color: #3e8e41;
+    }
+     
+}
